@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kenyan User Registration</title>
+</head>
+<body>
+    <h1>Kenyan User Registration</h1>
+    
+    <!-- Media Section -->
+    <section>
+        <h2>Kenyan Media</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenyan Flag" width="200">
+        <br>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br>
+        <video width="320" height="240" controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Form Section -->
+    <form>
+        <h2>Personal Information</h2>
+        <label for="firstname">First Name*:</label>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+        
+        <label for="lastname">Last Name*:</label>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+        
+        <label for="idnumber">National ID Number:</label>
+        <input type="text" id="idnumber" name="idnumber" pattern="[0-9]{8}"><br><br>
+        
+        <label>Gender*:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        
+        <label for="phone">Phone Number* (Format: 07XXXXXXXX):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="county">County*:</label>
+        <select id="county" name="county" required>
+            <option value="">-- Select County --</option>
+            <option value="nairobi">Nairobi</option>
+            <option value="mombasa">Mombasa</option>
+            <option value="kisumu">Kisumu</option>
+            <option value="nakuru">Nakuru</option>
+            <option value="kakamega">Kakamega</option>
+        </select><br><br>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3"></textarea><br><br>
+        
+        <h2>Interests</h2>
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="football" name="hobbies" value="football">
+        <label for="football">Football</label><br>
+        <input type="checkbox" id="athletics" name="hobbies" value="athletics">
+        <label for="athletics">Athletics</label><br>
+        <input type="checkbox" id="music" name="hobbies" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="dance" name="hobbies" value="dance">
+        <label for="dance">Dance</label><br><br>
+        
+        <!-- Kenyan Tribes List -->
+        <h3>Major Kenyan Tribes</h3>
+        <ul>
+            <li>Kikuyu</li>
+            <li>Luo</li>
+            <li>Kalenjin</li>
+            <li>Luhya</li>
+            <li>Kamba</li>
+            <li>Kisii</li>
+            <li>Meru</li>
+        </ul>
+        
+        <label>Favorite Kenyan Foods:</label><br>
+        <input type="checkbox" id="ugali" name="foods" value="ugali">
+        <label for="ugali">Ugali</label><br>
+        <input type="checkbox" id="nyamachoma" name="foods" value="nyamachoma">
+        <label for="nyamachoma">Nyama Choma</label><br>
+        <input type="checkbox" id="sukumawiki" name="foods" value="sukumawiki">
+        <label for="sukumawiki">Sukuma Wiki</label><br>
+        <input type="checkbox" id="chapati" name="foods" value="chapati">
+        <label for="chapati">Chapati</label><br><br>
+        
+        <!-- Kenyan National Parks Ordered List -->
+        <h3>Top Kenyan National Parks</h3>
+        <ol>
+            <li>Maasai Mara National Reserve</li>
+            <li>Amboseli National Park</li>
+            <li>Tsavo National Parks (East & West)</li>
+            <li>Lake Nakuru National Park</li>
+            <li>Samburu National Reserve</li>
+        </ol>
+        
+        <h2>Kenyan Population by County</h2>
+        <table border="1">
+            <tr>
+                <th>County</th>
+                <th>Population</th>
+                <th>Capital</th>
+            </tr>
+            <tr>
+                <td>Nairobi</td>
+                <td>4,397,073</td>
+                <td>Nairobi City</td>
+            </tr>
+            <tr>
+                <td>Mombasa</td>
+                <td>1,208,333</td>
+                <td>Mombasa City</td>
+            </tr>
+            <tr>
+                <td>Kisumu</td>
+                <td>1,155,574</td>
+                <td>Kisumu City</td>
+            </tr>
+        </table>
+        <br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
